@@ -449,7 +449,7 @@ section .container {
   line-height: 0;
 }
 
-.ambout-me .content  p:last-child {
+.about-me .content  p:last-child {
   margin-bottom: 0;
 }
 
@@ -640,13 +640,19 @@ section .container {
     text-align: justify;
     padding:0 20px; 
 }
+.about-me .lef{
+    text-align: justify;
+}
 @media (max-width: 768px) {
     .services .icon-box p {
   line-height: 22px;
   font-size: 14px;
   margin-bottom: 0;
     text-align: left;
-    padding:0 20px; 
+    padding:0 10px; 
+    }
+    .about-me .lef{
+      text-align: left;
     }
 }
 .services .sp2{
