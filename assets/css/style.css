@@ -433,22 +433,34 @@ section .container {
 
 .interests  ul li {
   margin-bottom: 20px;
-  display: flex;
+  display: inline-block;
   align-items: center;
 }
 
 .interests  ul strong {
   margin-right: 10px;
     font-size: 16px;
+    cursor: pointer;
 }
-
+.interests  ul strong:hover {
+    transform: scale(1.5);
+}
 .interests ul i {
-  font-size: 16px;
+  font-size: 18px;
+    font-weight: bold;
   margin-right: 5px;
   color: #18d26e;
   line-height: 0;
+
 }
 
+.interests ul li p{
+/*    display: none;*/
+    color: rgba(255,255,255,.8);
+    padding:2px 10px;
+    font-size: 14px;
+    text-align: justify;
+}
 .about-me .content  p:last-child {
   margin-bottom: 0;
 }

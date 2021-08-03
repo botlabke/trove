@@ -167,16 +167,34 @@
           <div class="row" style="padding-top: 10px;">
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Fiber Optics and Network Solutions</strong></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Telecommunication Base stations - Build &amp; Electrical Works, RF Network Planning And Design Services, Network Optimization Services</strong></li>
+                <li><span onclick="toggle1()"><i id="ico1" class="bi bi-chevron-right"></i> <strong>Fiber Optics and Network Solutions</strong></span>
+                <p id="more_info1" style="display:none;">Trove Africa Limited provides design and installation of Fiber Optic Networks, structured cabling, low voltage equipment installation and maintenance, voice and data networking, Wi-Fi installation, as well as staging &amp; deployment. <br>
+                We also supply, construct, deploy, and maintain turnkey fiber optics networks to fiber optic users primarily for mobile phone operators, power companies, and governments (Central and County Governments), telecommunications, data, and system protection applications.</p>
+                </li>
+                  <li><span onclick="toggle2()"><i id="ico2" class="bi bi-chevron-right"></i> <strong>Telecommunication Base stations - Build &amp; Electrical Works, RF Network Planning And Design Services, Network Optimization Services</strong></span>
+                  <p id="more_info2" style="display:none;">Trove Africa Limited offers solutions for BTS (Base Transceiver Station) construction and maintenance. Site Construction is where our skilled engineers will handle both the civil works (site excavation, steel fixing, tower erection &amp; wall construction); and the electrical/ BTS installation which is carried out according to equipment vendor recommendations and operations requirements. 
+                <br>The final step is BTS Integration, where our engineers will connect/integrate the BTS site to the network, and carry out tests and quality audits to ensure that all equipment function as per the requirements from the operator, thereafter, we hand over the site to the client. In addition, we offer RF Network Planning And Design Services, Network Optimization Services for New sites, or existing sites.
+                </p>
+                  
+                
+                    </li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Installation And Commission Services
-                    </strong></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Electrical &amp; Mechanical Engineering Services
-                    </strong></li>
+                
+                  <li><span onclick="toggle3()"><i id="ico3" class="bi bi-chevron-right"></i> <strong>Electrical &amp; Mechanical Engineering Services</strong></span>
+                  <p id="more_info3" style="display:none;">Our electrical services concentrate on maintenance and new electrical installations in both industrial and domestic wiring / structured cabling. Standby Power Supplies e.g. battery backup system, Uninterruptible power supplies (UPS) &amp; Inverters. Generator Supply, installations and maintenance. Electrical Lighting and Power Installations including lighting fittings &amp; LED lights. Scheduled maintenance of all electrical systems and after installations services. Supply of all electrical materials, accessories and hardware items and power analysis.<br>
+              We offer both off-grid and mini grid solar solutions. We also install and offer maintenance for air conditioners.
+              </p>
+                  </li>
+                  <li><span onclick="toggle4()"><i id="ico4" class="bi bi-chevron-right"></i> <strong>Installation And Commission Services
+                      </strong></span>
+                   <p id="more_info4" style="display:none;">
+            To this end, complete system management across all of the technologies deployed in Telecommunications networks is being refined to curtail rising maintenance costs and guarantee a reliable end-to-end solution.<br>
+            In all our undertakings, we have endeavored to make sure we comply with the highest OSH standards within each category. 
+            </p>
+                  </li>
               </ul>
             </div>
           </div>
@@ -224,7 +242,7 @@
             <h4><a href="">Telecommunication Base stations </a></h4>
             <p>Trove Africa Limited offers solutions for BTS (Base Transceiver Station) construction and maintenance. Site Construction is where our skilled engineers will handle both the civil works (site excavation, steel fixing, tower erection &amp; wall construction); and the electrical/ BTS installation which is carried out according to equipment vendor recommendations and operations requirements. 
                 <br>The final step is BTS Integration, where our engineers will connect/integrate the BTS site to the network, and carry out tests and quality audits to ensure that all equipment function as per the requirements from the operator, thereafter, we hand over the site to the client. In addition, we offer RF Network Planning And Design Services, Network Optimization Services for New sites, or existing sites.
-</p>
+                </p>
           </div>
         </div>
         
@@ -320,6 +338,56 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+    
+    
+    <script>
+    function toggle1() {
+          var x = document.getElementById("more_info1");
+          var i = document.getElementById("ico1");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+              i.className="bi bi-chevron-down";
+          } else {
+            x.style.display = "none";
+              i.className="bi bi-chevron-right";
+          }
+        }
+    function toggle2() {
+          var x = document.getElementById("more_info2");
+          var i = document.getElementById("ico2");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+              i.className="bi bi-chevron-down";
+          } else {
+            x.style.display = "none";
+              i.className="bi bi-chevron-right";
+          }
+        }
+    function toggle3() {
+          var x = document.getElementById("more_info3");
+          var i = document.getElementById("ico3");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+              i.className="bi bi-chevron-down";
+          } else {
+            x.style.display = "none";
+              i.className="bi bi-chevron-right";
+          }
+        }
+    function toggle4() {
+          var x = document.getElementById("more_info4");
+          var i = document.getElementById("ico4");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+              i.className="bi bi-chevron-down";
+          } else {
+            x.style.display = "none";
+              i.className="bi bi-chevron-right";
+          }
+        }
+        
+    
+    </script>
 
 
 </body>
